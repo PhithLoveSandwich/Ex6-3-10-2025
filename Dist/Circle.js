@@ -16,5 +16,8 @@ class Circle extends Color_1.Color {
     getDetail() {
         return `รูปทรงวงกลม: ขนาดรัศมี ${this.radian} ซม.`;
     }
+    draw() {
+        console.log("Drawing a Circle");
+    }
 }
 exports.Circle = Circle;

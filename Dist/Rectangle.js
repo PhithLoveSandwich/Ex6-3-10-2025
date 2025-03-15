@@ -17,5 +17,8 @@ class Rectangle extends Color_1.Color {
     getDetail() {
         return `รูปสี่เหลี่ยมผืนผ้า: ขนาด ${this.width} x ${this.height} ซม.`;
     }
+    draw() {
+        console.log("Drawing a Rectangle");
+    }
 }
 exports.Rectangle = Rectangle;

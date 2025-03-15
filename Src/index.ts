@@ -1,4 +1,3 @@
-import { Employee } from "./employee";
 import { PartTimeEmployee } from "./PartTimeEmployee";
 import { FullTimeEmployee } from "./FullTimeEmployee";
 
@@ -35,6 +34,7 @@ console.log(`สี: ${Rec1.getColor()}`)
 console.log(`ระบายสี: ${Rec1.getFilled()}`)
 console.log(`พื้นที่ของสี่เหลี่ยมผืนผ้า: ${Rec1.getArea()} ตร.ซม.`)
 console.log(`เส้นรอบวงของสี่เหลี่ยมผืนผ้า: ${Rec1.getPerimeter()} ซม.`)
+console.log(Rec1.draw())
 console.log("--------------------------------------------------");
 console.log()
 import { Circle } from "./Circle";
@@ -47,6 +47,7 @@ console.log(`สี: ${Cir1.getColor()}`)
 console.log(`ระบายสี: ${Cir1.getFilled()}`)
 console.log(`พื้นที่ของวงกลม: ${Cir1.getArea()} ตร.ซม.`)
 console.log(`เส้นรอบวงของวงกลม: ${Cir1.getPerimeter()} ซม.`)
+console.log(Cir1.draw())
 console.log("--------------------------------------------------");
 console.log()
 
@@ -76,13 +77,28 @@ C1.pay(1000);
 console.log("--------------------------------------------------");
 console.log()
 
-import {  } from "./PayPalPayment";
-import {  } from "./CreditCardPayment";
+import { Car } from "./Car";
+import { Motorcycle } from "./Motorcycle";
+import { FlyingCar } from "./FlyingCar";
+
+const car = new Car("Tesla", "Model S");
+const bike = new Motorcycle("Yamaha", "MT-07");
+const flyingCar = new FlyingCar("AirCar", "X1");
 
 console.log("--------------------------------------------------");
-console.log(P1)
-P1.pay(1000);
-console.log(C1)
-C1.pay(1000);
+console.log(car.getDetails());
+car.start();
+car.stop();
+car.chargeBattery();
+console.log()
+console.log(bike.getDetails());
+bike.start();
+bike.stop();
+bike.chargeBattery();
+console.log()
+console.log(flyingCar.getDetails());
+flyingCar.start();
+flyingCar.fly();
+flyingCar.stop();
 console.log("--------------------------------------------------");
 console.log()

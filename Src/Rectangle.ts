@@ -13,4 +13,7 @@ export class Rectangle extends Color implements Shape{
     getDetail():string{
         return `รูปสี่เหลี่ยมผืนผ้า: ขนาด ${this.width} x ${this.height} ซม.`
     }
+    draw(): void {
+        console.log("Drawing a Rectangle");
+    }
 }

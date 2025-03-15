@@ -13,4 +13,7 @@ export class Circle extends Color implements Shape{
     getDetail():string{
         return `รูปทรงวงกลม: ขนาดรัศมี ${this.radian} ซม.`
     }
+    draw(): void {
+        console.log("Drawing a Circle");
+    }
 }
